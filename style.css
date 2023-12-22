@@ -1,1 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+width: 100%;
+height: 100px;
+background-color: black;
+}
+/* creating a custommized font */
+@font-face {
+    font-family:shash ;
+    src: url('Harukaze.ttf'); }
+
+.logo{
+width: 30%;
+line-height: 100px;
+background-color: red;
+font-family: 'Times New Roman', Times, serif;
+font-size: 5em;
+text-align: center;
+float: left;
+
+/* using css3 */
+text-shadow: 4px 2px 4px yellow;
+font-family: shash;
+
+
+/* for combination of two or more colour using css3 */
+
+/* background-image: linear-gradient(red,blue); */
+
+/* assigning colour from left :- */
+background-image: linear-gradient(to left, red ,blue
+);
+
+}
+
+/* transforming using css3 like rotating 360degree and more
+.logo:hover{
+    transform: rotate(360deg);
+
+transition: transform 2s;
+} */
+
+.menue{
+    width: 70%;
+color: blue;
+line-height: 90px;
+float: right;
+}
+ul{
+   list-style: none;
+   text-align: right; 
+   padding: 0 50px; 
+}
+li{
+    display: inline-block;
+    border: 1px dotted rgb(252, 12, 12);
+font-family: 'Times New Roman', Times, serif;
+    padding: 0 20px;
+    font-size: 2em;
+   
+}
+
+#creator{ 
+    color: black; 
+    text-align:right;
+}
+/* applying css3 for animetion */
+.naruto_run{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color:white;
+}
+.naruto_run img{
+width: 160px;
+height: 120px;
+position: absolute;
+left: 0 ;  top: -20px;
+
+animation-name: bhagnaruto;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@keyframes bhagnaruto{
+    from{left:0}
+    to{left: 90%;}
+}
+
+
+.BackImg{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('anime_3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    background-attachment: fixed;
+    background-position-y:10em;
+
+}
+
+
+.BackImg1{
+    width: 100%;
+    height: 100vh;
+   /* background-color: rgb(2, 172, 135); */
+
+    background-image: url('Advertisment.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment:scroll;
+}
+
+#paragraph{
+    text-align: center;
+font-weight: 100;
+font-size: 2em;
+    background-color: darkorange;
+}
+
+#city{
+    text-align:start;
+    font-size: 1em;
+    font-weight: 200;
+    background-color:orange;
+}
+
+#type_select{
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+}
+
+#text_area{
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+
+}
+
+input{
+    padding-left: 8px;
+    margin: 10px;
+}
+
+.username_password{
+  font-size: 25px;
+    
+    }
+    .position{
+        position: relative;
+    }
+
+.scroll_bar{
+width: 500px;
+height: 300px;
+border: 3px solid red;
+overflow:auto;
+padding: 25px;
+background-color: aliceblue;
+position: absolute;
+right: 0px;
+
+/* making shadow in the box using css3 */
+box-shadow: -10px 10px 3px gray;
+box-sizing: border-box;
+
+
+}
+ 
+
+#submit{
+  
+    font-weight: 700;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(8, 86, 255);
+
+    /* padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px; */
+    position: absolute;
+   
+    top: 400px;
+   right: 600px;
+   text-shadow: 4px 4px 4px white;
+   /* applying css3 for transitions effect  */
+width: 500;
+height: 500;
+
+/* making shadow using css3 */
+box-shadow: -7px 7px 6px grey;
+
+} 
+
+#submit{
+    width: 200px;
+    height: 50px;
+    transition-property:all;
+    transition-duration: 1s;
+transition-timing-function: linear;
+}
+#submit:hover{
+    width: 300px;
+    height: 100px;
+
+}
+
+/* creating multiple column using css3 */
+.about{
+column-count: 3;
+column-gap: 55px;
+column-rule: dotted;
+column-rule-color: green;
+text-align: justify;
+
+}
+
+.BackImg{
+border-radius: 20px;
+}
+.BackImg1{
+    border-radius: 50px;
+}
+
 
